@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home Page - HRouter.js SPA Demo</title>
+</head>
+<body>
+<section id="about" class="hr-page">
+<h1>About Page</h1>
+- Go to <a href="#/">Home page</a><br/>
+Note: Below Bio is loaded from <a href="about.html">about.html</a> file using HLOAD tag. e.g &lt;hload data-url="TEMPLATE_URL"&gt;&lt;/hload&gt; (Replace TEMPLATE_URL with the Template File).<br/>
+<hload data-url="about.html"></hload>
+</section>
+<section id="home" class="hr-page">
+<h1>Home Page</h1>
+Welcome to my Homepage <br/>
+Made possible by HRouter.js <br/>
+Powered by Oyedele Hammed Horlah. <br/>
+- Go to <a href='#/about'>About page</a>.
+</section>
+<main id="hr-app">
+</main>
+<script src="HRouter.js"></script>
+<script>
+HRoute('/', 'home', function () {
+document.title = 'Home Page - HRouter.js SPA Demo';
+});
+HRoute('/about', 'about', function () {
+document.title = 'About page - HRouter.js SPA Demo';
+});
+</script>
+</body>
+</html>
