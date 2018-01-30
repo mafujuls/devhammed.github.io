@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<div id="hrView"></div>
+<script src="HRouter.js"></script>
+<script>
+var route = new HRouter();
+route.on("/", function( req ){
+document.title = "Home";
+hrView.innerHTML = "Homepage - view <a href='#/user/Horlahcoded'>Horlahcoded</a> profile.";
+})
+.on( "/user/:name", function( req ){
+var name = req.params.name;
+document.title = name;
+hrView.innerHTML = name + " profile - Search <a href='#/search?q=HRouter'>HRouter</a>";
+})
+.on("/search", function( req ){
+var search = req.query.q;
+document.title = search + " results";
+hrView.innerHTML = "Search results for " + search + " - go back to <a href='#/'>home</a>";
+});
+route.run();
+</script>
+</body>
+</html>
