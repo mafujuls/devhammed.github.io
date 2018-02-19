@@ -18,7 +18,7 @@ HRouter.prototype = {
       go = function() {
         var url = location.hash.slice(1).split("?"),
         path = url[0] || "/",
-        qs = url[1] + "&" + location.search.slice(1) || "",
+        queryString = url[1] + "&" + location.search.slice(1) || "",
         i = 0,
         keys = [];
         for ( ; i < self.routes.length; i++ ) {
@@ -31,13 +31,13 @@ HRouter.prototype = {
             m = reg.exec( path );
             var req = { params: {}, query: {} };
             m.slice(1).map(function( val, i ){
-              req.params[keys[i]] = val;
+              req.params[ keys[ i ] ] = val;
             });
-            qs.split("&").map(function( p ){
-              p = p.split("=");
-              req.query[p[0]] = p[1];
+            queryString.split("&").map(function( pair ){
+              pair = pair.split("=");
+              req.query[ pair[0] ] = pair[1];
             });
-            self.routes[i].fn( req );
+            self.routes[ i ].fn( req );
             break;
           }
         }
