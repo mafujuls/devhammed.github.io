@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Open+Sans');
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
@@ -67,14 +68,15 @@ strong {
 	display: block;
 }
 .heading {
-	font-family: cursive, monospace;
+	font-family: 'Exo 2', sans-serif;
 }
 .bio {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 19px !important;
 }
 .skills {
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 11px;
 }
 .center {
 	display: block;
