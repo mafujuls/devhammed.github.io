@@ -67,9 +67,14 @@
 	<script src="writer.js"></script>
 	<script>
 		writer("Amazing Web Developer ", ".bio", 150);
-		if (document.querySelector(".bio").innerHTML.length > 19) {
-		  writer("<strong>Skills</strong>: <span>HTML5, CSS3, Bootstrap 4, JavaScript, jQuery, PHP & WordPress.</span>", ".skills", 150);
-		}
+		(function checkStr(){
+		  var str = document.querySelector(".bio").innerHTML;
+		  if (str.length > 19) {
+		    writer("<strong>Skills</strong>: <span>HTML5, CSS3, Bootstrap 4, JavaScript, jQuery, PHP & WordPress.</span>", ".skills", 150);
+		  } else {
+	            checkStr();
+		  }
+		})();
 	</script>
 </body>
 
