@@ -68,7 +68,9 @@ a {
 	padding: 0 8px;
 }
 .photo {
-	border-radius: 10%;
+	width: 240px;
+	height: 320px;
+	border-radius: 30%;
 }
 .heading {
 	font-family: Lato, sans-serif;
