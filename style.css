@@ -56,6 +56,7 @@ body {
 }
 a {
 	text-decoration: none;
+	color: #000;
 }
 .paragraph, p {
 	padding: 0 0 10px 20px;
@@ -69,7 +70,8 @@ a {
 }
 .photo {
 	padding: 2px;
-	border-radius: 5px;
+	border-radius: 50%;
+	box-shadow: 2px 4px rgba(0, 0,0, 0.1);
 }
 .heading {
 	font-family: Lato, sans-serif;
