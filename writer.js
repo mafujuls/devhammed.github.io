@@ -1,3 +1,7 @@
+/** Writer.js | Typewriting mini-library
+  @author Oyedele Hammed Horlah
+  @date March 2018
+*/
 function writer(str, element, speed) {
 	var i = 0,
 		speed = speed || 50,
