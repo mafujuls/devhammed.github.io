@@ -73,6 +73,9 @@ a {
 	border-radius: 50%;
 	box-shadow: 2px 4px rgba(0, 0,0, 0.1);
 }
+.photo:hover {
+	transform: rotate(360deg);
+}
 .heading {
 	font-family: Lato, sans-serif;
 }
