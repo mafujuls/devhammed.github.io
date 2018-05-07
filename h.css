@@ -1,9 +1,4 @@
-/* H.CSS (Flat, Card & Material UI Design Library)
- * Author: Oyedele Hammed Horlah
- * URL: www.oyedelehammed.ml
-*/
-
-/* Resets */
+/* Normalize.css */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
@@ -52,217 +47,23 @@ h3{font-size:24px}
 h4{font-size:20px}
 h5{font-size:18px}
 h6{font-size:16px}
-.h-serif{font-family:serif}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
-.h-wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
-.h-image{max-width:100%;height:auto}
 img{margin-bottom:-5px}
 a{color:inherit}
-.h-table,.h-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}
-.h-table-all{border:1px solid #ccc}
-.h-bordered tr,.h-table-all tr{border-bottom:1px solid #ddd}
-.h-striped tbody tr:nth-child(even){background-color:#f1f1f1}
-.h-table-all tr:nth-child(odd){background-color:#fff}
-.h-table-all tr:nth-child(even){background-color:#f1f1f1}
-.h-hoverable tbody tr:hover,
-.h-ul.h-hoverable li:hover{background-color:#ccc}
-.h-centered tr th,.h-centered tr td{text-align:center}
-.h-table td,.h-table th,.h-table-all td,.h-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
-.h-table th:first-child,.h-table td:first-child,.h-table-all th:first-child,.h-table-all td:first-child{padding-left:16px}
 .h-btn,.h-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 .h-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
-.h-btn,.h-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
-.h-disabled,.h-btn:disabled,.h-button:disabled{cursor:not-allowed;opacity:0.3}
-.h-disabled *,:disabled *{pointer-events:none}
-.h-btn.h-disabled:hover,.h-btn:disabled:hover{box-shadow:none}
-.h-badge,.h-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}
-.h-badge{border-radius:50%}
-.h-ul{list-style-type:none;padding:0;margin:0}
-.h-ul li{padding:8px 16px;border-bottom:1px solid #ddd}
-.h-ul li:last-child{border-bottom:none}
-.h-tooltip,.h-display-container{position:relative}
-.h-tooltip .h-text{display:none}
-.h-tooltip:hover .h-text{display:inline-block}
-.h-ripple:active{opacity:0.5}
-.h-ripple{transition:opacity 0s}
+.h-btn,.h-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .h-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
 .h-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
 .h-check,.h-radio{width:24px;height:24px;position:relative;top:6px}
-.h-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
-.h-main,#main{transition:margin-left .4s}
-.h-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
-.h-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
-.h-bar{width:100%;overflow:hidden}
-.h-center .h-bar{display:inline-block;width:auto}
-.h-bar .h-bar-item{padding:8px 16px;float:left;width:auto;border:none;outline:none;display:block}
-.h-bar .h-button{white-space:normal}
-.h-bar-block .h-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;outline:none;white-space:normal;float:none}
-.h-bar-block.h-center .h-bar-item{text-align:center}
-.h-block{display:block;width:100%}
-.h-responsive{overflow-x:auto}
-.h-container:after,.h-container:before,.h-panel:after,.h-panel:before,.h-row:after,.h-row:before,.h-row-padding:after,.h-success:after,.h-success:before,.h-danger:after,.h-danger:before,.h-info:after,.h-info:before,.h-warning:after,.h-warning:before,.h-row-padding:before,
-.h-cell-row:before,.h-cell-row:after,.h-clear:after,.h-clear:before,.h-bar:before,.h-bar:after{content:"";display:table;clear:both}
-.h-col,.h-half,.h-third,.h-twothird,.h-threequarter,.h-quarter{float:left;width:100%}
-.h-col.s1{width:8.33333%}
-.h-col.s2{width:16.66666%}
-.h-col.s3{width:24.99999%}
-.h-col.s4{width:33.33333%}
-.h-col.s5{width:41.66666%}
-.h-col.s6{width:49.99999%}
-.h-col.s7{width:58.33333%}
-.h-col.s8{width:66.66666%}
-.h-col.s9{width:74.99999%}
-.h-col.s10{width:83.33333%}
-.h-col.s11{width:91.66666%}
-.h-col.s12{width:99.99999%}
-@media (min-width:601px){
-.h-col.m1{width:8.33333%}
-.h-col.m2{width:16.66666%}
-.h-col.m3,.h-quarter{width:24.99999%}
-.h-col.m4,.h-third{width:33.33333%}
-.h-col.m5{width:41.66666%}
-.h-col.m6,.h-half{width:49.99999%}
-.h-col.m7{width:58.33333%}
-.h-col.m8,.h-twothird{width:66.66666%}
-.h-col.m9,.h-threequarter{width:74.99999%}
-.h-col.m10{width:83.33333%}
-.h-col.m11{width:91.66666%}
-.h-col.m12{width:99.99999%}}
-@media (min-width:993px){
-.h-col.l1{width:8.33333%}
-.h-col.l2{width:16.66666%}
-.h-col.l3{width:24.99999%}
-.h-col.l4{width:33.33333%}
-.h-col.l5{width:41.66666%}
-.h-col.l6{width:49.99999%}
-.h-col.l7{width:58.33333%}
-.h-col.l8{width:66.66666%}
-.h-col.l9{width:74.99999%}
-.h-col.l10{width:83.33333%}
-.h-col.l11{width:91.66666%}
-.h-col.l12{width:99.99999%}}
-.h-content{max-width:980px;margin:auto}
-.h-rest{overflow:hidden}
-.h-cell-row{display:table;width:100%}
-.h-cell{display:table-cell}
-.h-cell-top{vertical-align:top}
-.h-cell-middle{vertical-align:middle}
-.h-cell-bottom{vertical-align:bottom}
-.h-hide{display:none!important}
-.h-show-block,.h-show{display:block!important}
-.h-show-inline-block{display:inline-block!important}
-@media (max-width:600px){
-.h-modal-content{margin:0 10px;width:auto!important}
-.h-modal{padding-top:30px}
-.h-hide-small{display:none!important}
-.h-mobile{display:block;width:100%!important}
-.h-bar-item.h-mobile{text-align:center}}
-@media (max-width:768px){
-.h-modal-content{width:500px}
-.h-modal{padding-top:50px}}
-@media (min-width:993px){
-.h-modal-content{width:900px}
-.h-hide-large{display:none!important}
-.h-sidebar.h-collapse{display:block!important}}
-@media (max-width:992px) and (min-width:601px){
-.h-hide-medium{display:none!important}}
-@media (max-width:992px){
-.h-sidebar.h-collapse{display:none}
-.h-main{margin-left:0!important;margin-right:0!important}}
-.h-top,.h-bottom{position:fixed;width:100%;z-index:1}
-.h-full-width{width:100%!important}
-.h-top{top:0}
-.h-bottom{bottom:0}
-.h-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
-.h-display-topleft{position:absolute;left:0;top:0}
-.h-display-topright{position:absolute;right:0;top:0}
-.h-display-bottomleft{position:absolute;left:0;bottom:0}
-.h-display-bottomright{position:absolute;right:0;bottom:0}
-.h-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
-.h-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
-.h-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
-.h-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
-.h-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
-.h-display-container:hover .h-display-hover{display:block}
-.h-display-container:hover span.h-display-hover{display:inline-block}
-.h-display-hover{display:none}
-.h-display-position{position:absolute}
-.h-circle{border-radius:50%}
-.h-round-small{border-radius:2px}
-.h-round,.h-round-medium{border-radius:4px}
-.h-round-large{border-radius:8px}
-.h-round-xlarge{border-radius:16px}
-.h-round-xxlarge{border-radius:32px}
-.h-row-padding,.h-row-padding>.h-half,.h-row-padding>.h-third,.h-row-padding>.h-twothird,.h-row-padding>.h-threequarter,.h-row-padding>.h-quarter,.h-row-padding>.h-col{padding:0 8px}
+.h-container:after,.h-container:before,.h-panel:after,.h-panel:before,.h-row:after,.h-row:before,.h-row-padding:after,.h-success:after,.h-success:before,.h-danger:after,.h-danger:before,.h-info:after,.h-info:before,.h-warning:after,.h-warning:before{content:"";display:table;clear:both}
 .h-container,.h-panel,.h-success,.h-warning,.h-info,.h-danger{padding:0.01em 16px}
 .h-panel,.h-success,.h-warning,.h-info,.h-danger{margin-top:16px;margin-bottom:16px}
 .h-success{color:#fff;background-color:#4caf50}
 .h-danger{color:#fff;background-color:#f44336}
 .h-warning{color:#000;background-color:#ffeb3b}
 .h-info{color:#fff;background-color:#2196f3}
-.h-card{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
-.h-card-4,.h-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
-.h-spin{animation:h-spin 2s infinite linear}
-@keyframes h-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
-.h-animate-fading{animation:fading 10s infinite}
-@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-.h-animate-opacity{animation:opac 0.8s}
-@keyframes opac{from{opacity:0} to{opacity:1}}
-.h-animate-top{position:relative;animation:animatetop 0.4s}
-@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-.h-animate-left{position:relative;animation:animateleft 0.4s}
-@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-.h-animate-right{position:relative;animation:animateright 0.4s}
-@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
-.h-animate-bottom{position:relative;animation:animatebottom 0.4s}
-@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
-.h-animate-zoom {animation:animatezoom 0.6s}
-@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
-.h-animate-input{transition:width 0.4s ease-in-out}
-.h-animate-input:focus{width:100%!important}
-.h-tiny{font-size:10px!important}
-.h-small{font-size:12px!important}
-.h-medium{font-size:15px!important}
-.h-large{font-size:18px!important}
-.h-xlarge{font-size:24px!important}
-.h-xxlarge{font-size:36px!important}
-.h-xxxlarge{font-size:48px!important}
-.h-jumbo{font-size:64px!important}
-.h-left-align{text-align:left!important}
-.h-right-align{text-align:right!important}
-.h-justify{text-align:justify!important}
-.h-center{text-align:center!important}
-.h-border-0{border:0!important}
-.h-border{border:1px solid #ccc!important}
-.h-border-top{border-top:1px solid #ccc!important}
-.h-border-bottom{border-bottom:1px solid #ccc!important}
-.h-border-left{border-left:1px solid #ccc!important}
-.h-border-right{border-right:1px solid #ccc!important}
-.h-topbar{border-top:6px solid #ccc!important}
-.h-bottombar{border-bottom:6px solid #ccc!important}
-.h-leftbar{border-left:6px solid #ccc!important}
-.h-rightbar{border-right:6px solid #ccc!important}
-.h-section{margin-top:16px!important;margin-bottom:16px!important}
-.h-margin{margin:16px!important}
-.h-margin-top{margin-top:16px!important}
-.h-margin-bottom{margin-bottom:16px!important}
-.h-margin-left{margin-left:16px!important}
-.h-margin-right{margin-right:16px!important}
-.h-padding-small{padding:4px 8px!important}
-.h-padding{padding:8px 16px!important}
-.h-padding-large{padding:12px 24px!important}
-.h-padding-16{padding-top:16px!important;padding-bottom:16px!important}
-.h-padding-24{padding-top:24px!important;padding-bottom:24px!important}
-.h-padding-32{padding-top:32px!important;padding-bottom:32px!important}
-.h-padding-48{padding-top:48px!important;padding-bottom:48px!important}
-.h-padding-64{padding-top:64px!important;padding-bottom:64px!important}
-.h-left{float:left!important}
-.h-right{float:right!important}
-.h-button:hover{color:#000!important;background-color:#ccc!important}
-.h-transparent,.h-hover-none:hover{background-color:transparent!important}
-.h-hover-none:hover{box-shadow:none!important}
-
 /* BackGround Colors */
 .h-amber{color:#000;background-color:#ffc107}
 .h-aqua{color:#000;background-color:#00ffff}
