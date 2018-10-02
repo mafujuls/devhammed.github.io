@@ -23,7 +23,7 @@ a {
   font-weight: 900;
   padding: 15px;
   position: fixed;
-  z-index: 999;
+  z-index: 998;
 }
 
 .wrapper__start-tag {
@@ -55,7 +55,7 @@ a {
   text-align: center;
   transform: translate(25%);
   width: 63%;
-  z-index: 998;
+  z-index: 999;
 }
 
 .app__header__pic {
@@ -119,4 +119,13 @@ a {
 .app__social__icon:hover {
   fill: tomato;
   transform: rotate(360deg) scale(1.2);
+}
+
+@media (min-width: 600px) {
+
+  .wrapper__end-tag,
+  .wrapper__start-tag {
+    z-index: 999;
+  }
+
 }
