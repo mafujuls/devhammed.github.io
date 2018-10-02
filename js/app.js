@@ -6,7 +6,7 @@
 particlesJS( 'wrapper', {
   "particles": {
     "number": {
-      "value": 10,
+      "value": 5,
       "density": {
         "enable": true,
         "value_area": 800
